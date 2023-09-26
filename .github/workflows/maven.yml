@@ -50,5 +50,5 @@ jobs:
       - name: docker tag
         run: docker tag ${{ secrets.DOCKER_REPO }}/myfirstimagepush:latest sorrentino01/github-action:myfirstimagepush
       - name: Publish Docker image
-        run: docker push ${{ secrets.DOCKER_REPO }}/myfirstimagepush
-        #run: docker push gsorrentino01/github-action:myfirstimagepush
+        #run: docker push ${{ secrets.DOCKER_REPO }}/myfirstimagepush
+        run: docker push gsorrentino01/github-action:myfirstimagepush
